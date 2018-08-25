@@ -23,7 +23,7 @@ class Artist
 
   #returns and artist instance w/ the given name (either found or new)
   def self.find_or_create_by_name(name)
-    if self.all.find{|person| person.name == name} != nil 
+    if self.all.find{|person| person.name == name} != nil
       self.all.find{|person| person.name == name}
     else
       Artist.new(name)
