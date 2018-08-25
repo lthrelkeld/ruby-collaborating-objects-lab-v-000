@@ -33,7 +33,8 @@ class Artist
   end
 
   def print_songs
-    print self.songs.split("")
+    print self.songs
+    binding.pry
   end
 
 end
